@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CatBreedExpertSystem">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CatBreedExpertSystem/out/artifacts/CatBreedExpertSystem_jar/CatBreedExpertSystem.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

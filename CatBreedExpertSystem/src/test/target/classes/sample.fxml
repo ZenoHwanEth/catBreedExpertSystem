@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Button layoutX="579.0" layoutY="506.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="62.0" prefWidth="234.0" text="Search" />
+            <Button fx:id="lbutton" disable="true" layoutX="456.0" layoutY="183.0" mnemonicParsing="false" onAction="#setLbutton" text="&lt;" />
+            <Button fx:id="rbutton" disable="true" layoutX="868.0" layoutY="183.0" mnemonicParsing="false" onAction="#setrButton" text="&gt;" />
+            <Separator layoutX="450.0" layoutY="14.0" orientation="VERTICAL" prefHeight="584.0" prefWidth="2.0" />
+            <Label fx:id="catLabel" contentDisplay="CENTER" layoutX="470.0" layoutY="428.0" prefHeight="62.0" prefWidth="413.0" style="-fx-background-color: #e6e3e3;" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Pane layoutX="492.0" layoutY="9.0" prefHeight="341.0" prefWidth="370.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="341.0" fitWidth="370.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Label layoutX="470.0" layoutY="378.0" prefHeight="39.0" prefWidth="307.0" text="Cat Breed Chosen :">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="34.0" prefHeight="113.0" prefWidth="370.0" text="Cat Breed Expert System">
+               <font>
+                  <Font name="Berlin Sans FB" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="147.0" prefHeight="21.0" prefWidth="307.0" text="How do you like Degree of Shedding?" />
+            <ComboBox fx:id="SheddingCombo" layoutX="42.0" layoutY="179.0" prefWidth="150.0" promptText="Select One" />
+            <Label layoutX="42.0" layoutY="214.0" prefHeight="21.0" prefWidth="282.0" text="Prone to health problems?" />
+            <ComboBox fx:id="HealthCombo" layoutX="42.0" layoutY="240.0" prefWidth="150.0" promptText="Select One" />
+            <Label layoutX="42.0" layoutY="279.0" prefHeight="21.0" prefWidth="253.0" text="Would you like the cat to be playful? " />
+            <ComboBox fx:id="PlayfulCombo" layoutX="42.0" layoutY="306.0" prefWidth="150.0" promptText="Select One" />
+            <Label layoutX="37.0" layoutY="350.0" prefHeight="21.0" prefWidth="362.0" text="Would you like the cat to have tendency to vocalize?" />
+            <ComboBox fx:id="VocalizeCombo" layoutX="42.0" layoutY="382.0" prefWidth="150.0" promptText="Select One" />
+            <Label layoutX="42.0" layoutY="428.0" prefHeight="21.0" prefWidth="352.0" text="Would you like the cat to be friendly ?" />
+            <ComboBox fx:id="FriendCombo" layoutX="42.0" layoutY="449.0" prefWidth="150.0" promptText="Select One" />
+            <Label layoutX="42.0" layoutY="496.0" prefHeight="21.0" prefWidth="323.0" text="Would you like the cat to be easy to gloom?" />
+            <ComboBox fx:id="GroomCombo" layoutX="42.0" layoutY="527.0" prefWidth="150.0" promptText="Select One" />
+            <Label fx:id="errorMessage1" layoutX="201.0" layoutY="188.0" prefHeight="21.0" prefWidth="224.0" textFill="RED" />
+            <Label fx:id="errorMessage2" layoutX="201.0" layoutY="245.0" prefHeight="21.0" prefWidth="224.0" textFill="RED" />
+            <Label fx:id="errorMessage3" layoutX="201.0" layoutY="311.0" prefHeight="21.0" prefWidth="224.0" textFill="RED" />
+            <Label fx:id="errorMessage4" layoutX="201.0" layoutY="387.0" prefHeight="21.0" prefWidth="224.0" textFill="RED" />
+            <Label fx:id="errorMessage5" layoutX="201.0" layoutY="454.0" prefHeight="21.0" prefWidth="224.0" textFill="RED" />
+            <Label fx:id="errorMessage6" layoutX="201.0" layoutY="532.0" prefHeight="21.0" prefWidth="224.0" textFill="RED" />
+         </children></AnchorPane>
+   </children>
+</GridPane>
